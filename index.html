@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darktext: "#fafefe",
+              darkbackground: "#040404",
+              darkprimary: "#1d5ee2",
+              darksecondary: "#272727",
+              darkaccent: "#7089ff",
+              // dark
+              text: "#040404",
+              background: "#fafefe",
+              primary: "#1CC0E9",
+              secondary: "#fcfcfc",
+              accent: "#0024d6",
+            },
+            backgroundSize: {
+              50: "920%",
+            },
+            backgroundPosition: {
+              foc: "right 67.75% top 2%",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <style>
+      .slider .slick-slide {
+        margin-right: 1vw !important;
+        margin-left: 1vw !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="min-w-screen pl-20 max-md:pl-0 relative min-h-screen before:block before:saturate-50 before:blur-sm before:grayscale sm:before:filter-none sm:before:saturate-50 before:w-full before:h-full before:bg-[url('../public/img/products/jumbotron.png')] before:absolute before:inset-0 before:bg-no-repeat sm:before:bg-left before:bg-50 smbefore before:bg-foc sm:before:bg-cover max-md:text-center max-md:flex max-md:justify-center max-md:items-center"
+    >
+      <div
+        class="z-10 relative container mx-auto flex items-center min-h-screen"
+      >
+        <div class="md:px-3 sm:px-0 sm:-mt-14">
+          <img
+            src="../public/img/logo.png"
+            alt="Offer Print"
+            class="w-44 max-md:mx-auto"
+          />
+          <p
+            class="text-2xl my-3 font-bold tracking-tighter sm:tracking-normal drop-shadow-2xl text-slate-100 md:text-3xl"
+          >
+            OFFER PRINT
+          </p>
+          <h1
+            class="font-bold my-3 drop-shadow-2xl sm:leading-none max xl:tracking-normal xl:leading-tight text-5xl xl:text-6xl capitalize text-slate-800/90"
+          >
+            melayani
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-sky-600"
+              >percetakan&amp;</span
+            ><br />printing <br class="block sm:hidden" />
+            online
+          </h1>
+          <button
+            type="button"
+            class="bg-primary/90 hover:scale-95 font-semibold text-white rounded-lg px-4 py-3 m-4 mx-0 max-md:mt-8 text-xl transition duration-300 ease select-none hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-primary/80 shadow-xl"
+          >
+            Pesan Sekarang
+          </button>
+        </div>
+      </div>
+      <div
+        class="backdrop-brightness-75 bg-gradient-to-r from-sky-50/20 w-full h-full absolute top-0 left-0"
+      ></div>
+    </header>
+
+    <main>
+      <div class="bg-gradient-to-bl from-cyan-50">
+        <section class="container py-36 mx-auto md:px-6">
+          <div class="max-w-6xl mx-auto">
+            <div>
+              <div class="mb-6 w-full px-4 sm:px-2 lg:mb-0 lg:w-5/6">
+                <p
+                  class="mb-3 font-semibold tracking-tighter uppercase text-primary dark:text-primary-400 sm:text-lg"
+                >
+                  Keunggulan
+                </p>
+                <h2 class="mb-5 text-4xl font-bold">
+                  Kenapa harus
+                  <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-primary capitalize"
+                  >
+                    Offer Print</span
+                  >
+                  ?
+                </h2>
+
+                <p
+                  class="mb-12 text-neutral-500 dark:text-neutral-300 text-lg font-normal"
+                >
+                  Menjadi mitra percetakan anda. kami menghadirkan solusi cetak
+                  yang memikat dan memenuhi harapan, dengan kemudahan pesan
+                  online kapan saja. Segera wujudkan cetakan impian anda bersama
+                  Offer Print
+                </p>
+              </div>
+
+              <div
+                class="mx-auto px-4 sm:px-3 md:px-0 mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-full"
+              >
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div
+                    class="bg-white p-4 sm:p-5 border border-primary/40 rounded w-full lg:px-3"
+                  >
+                    <div class="flex flex-col sm:flex-row">
+                      <div class="shrink-0">
+                        <div
+                          class="mb-6 inline-block rounded-md bg-slate-200 p-4 text-primary"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            class="h-9 sm:w-6 w-9 sm:h-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sm:ml-4 flex flex-col -space-y-2">
+                        <h5 class="mb-3 text-xl font-semibold tracking-tight">
+                          Harga Terjangkau
+                        </h5>
+                        <p class="text-neutral-500 dark:text-neutral-300">
+                          Menawarkan harga yang kompetitif dan terjangkau untuk
+                          pelanggan, sehingga mereka bisa mendapatkan hasil
+                          printing berkualitas tanpa perlu mengeluarkan biaya
+                          besar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-white p-4 sm:p-5 border border-primary/40 rounded w-full lg:px-3"
+                  >
+                    <div class="flex flex-col sm:flex-row">
+                      <div class="shrink-0">
+                        <div
+                          class="mb-6 inline-block rounded-md bg-slate-200 p-4 text-primary"
+                        >
+                          <svg
+                            class="h-9 sm:w-6 w-9 sm:h-6"
+                            viewBox="0 -2 32 32"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                          >
+                            <g
+                              id="Page-1"
+                              stroke="none"
+                              stroke-width="1"
+                              fill="none"
+                              fill-rule="evenodd"
+                              sketch:type="MSPage"
+                            >
+                              <g
+                                id="Icon-Set"
+                                sketch:type="MSLayerGroup"
+                                transform="translate(-100.000000, -205.000000)"
+                                fill="#1CC0E9"
+                              >
+                                <path
+                                  d="M130,226 C130,227.104 129.104,228 128,228 L125.858,228 C125.413,226.278 123.862,225 122,225 L110,225 C108.138,225 106.587,226.278 106.142,228 L104,228 C102.896,228 102,227.104 102,226 L102,224 C102,222.896 102.896,222 104,222 L128,222 C129.104,222 130,222.896 130,224 L130,226 L130,226 Z M122,231 L110,231 C108.896,231 108,230.104 108,229 C108,227.896 108.896,227 110,227 L122,227 C123.104,227 124,227.896 124,229 C124,230.104 123.104,231 122,231 L122,231 Z M108,209 C108,207.896 108.896,207 110,207 L122,207 C123.104,207 124,207.896 124,209 L124,220 L108,220 L108,209 L108,209 Z M128,220 L126,220 L126,209 C126,206.791 124.209,205 122,205 L110,205 C107.791,205 106,206.791 106,209 L106,220 L104,220 C101.791,220 100,221.791 100,224 L100,226 C100,228.209 101.791,230 104,230 L106.142,230 C106.587,231.723 108.138,233 110,233 L122,233 C123.862,233 125.413,231.723 125.858,230 L128,230 C130.209,230 132,228.209 132,226 L132,224 C132,221.791 130.209,220 128,220 L128,220 Z"
+                                  id="print"
+                                  sketch:type="MSShapeGroup"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sm:ml-4 flex flex-col -space-y-2">
+                        <h5 class="mb-3 text-xl font-semibold tracking-tight">
+                          Percetakan Cepat
+                        </h5>
+                        <p class="text-neutral-500 dark:text-neutral-300">
+                          Menjamin proses percetakan yang cepat dan efisien,
+                          memberikan pelanggan kemudahan untuk mendapatkan
+                          produk mereka dengan cepat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-white p-4 sm:p-5 border border-primary/40 rounded w-full lg:px-3"
+                  >
+                    <div class="flex flex-col sm:flex-row">
+                      <div class="shrink-0">
+                        <div
+                          class="mb-6 inline-block rounded-md bg-slate-200 p-4 text-primary"
+                        >
+                          <svg
+                            class="h-9 sm:w-6 w-9 sm:h-6"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.1459 7.02251C11.5259 6.34084 11.7159 6 12 6C12.2841 6 12.4741 6.34084 12.8541 7.02251L12.9524 7.19887C13.0603 7.39258 13.1143 7.48944 13.1985 7.55334C13.2827 7.61725 13.3875 7.64097 13.5972 7.68841L13.7881 7.73161C14.526 7.89857 14.895 7.98205 14.9828 8.26432C15.0706 8.54659 14.819 8.84072 14.316 9.42898L14.1858 9.58117C14.0429 9.74833 13.9714 9.83191 13.9392 9.93531C13.9071 10.0387 13.9179 10.1502 13.9395 10.3733L13.9592 10.5763C14.0352 11.3612 14.0733 11.7536 13.8435 11.9281C13.6136 12.1025 13.2682 11.9435 12.5773 11.6254L12.3986 11.5431C12.2022 11.4527 12.1041 11.4075 12 11.4075C11.8959 11.4075 11.7978 11.4527 11.6014 11.5431L11.4227 11.6254C10.7318 11.9435 10.3864 12.1025 10.1565 11.9281C9.92674 11.7536 9.96476 11.3612 10.0408 10.5763L10.0605 10.3733C10.0821 10.1502 10.0929 10.0387 10.0608 9.93531C10.0286 9.83191 9.95713 9.74833 9.81418 9.58117L9.68403 9.42898C9.18097 8.84072 8.92945 8.54659 9.01723 8.26432C9.10501 7.98205 9.47396 7.89857 10.2119 7.73161L10.4028 7.68841C10.6125 7.64097 10.7173 7.61725 10.8015 7.55334C10.8857 7.48944 10.9397 7.39258 11.0476 7.19887L11.1459 7.02251Z"
+                              stroke="#1CC0E9"
+                              stroke-width="1.5"
+                            ></path>
+                            <path
+                              d="M12 16.0678L8.22855 19.9728C7.68843 20.5321 7.41837 20.8117 7.18967 20.9084C6.66852 21.1289 6.09042 20.9402 5.81628 20.4602C5.69597 20.2495 5.65848 19.8695 5.5835 19.1095C5.54117 18.6804 5.52 18.4658 5.45575 18.2861C5.31191 17.8838 5.00966 17.5708 4.6211 17.4219C4.44754 17.3554 4.24033 17.3335 3.82589 17.2896C3.09187 17.212 2.72486 17.1732 2.52138 17.0486C2.05772 16.7648 1.87548 16.1662 2.08843 15.6266C2.18188 15.3898 2.45194 15.1102 2.99206 14.5509L5.45575 12"
+                              stroke="#1CC0E9"
+                              stroke-width="1.5"
+                            ></path>
+                            <path
+                              d="M12 16.0678L15.7715 19.9728C16.3116 20.5321 16.5816 20.8117 16.8103 20.9084C17.3315 21.1289 17.9096 20.9402 18.1837 20.4602C18.304 20.2495 18.3415 19.8695 18.4165 19.1095C18.4588 18.6804 18.48 18.4658 18.5442 18.2861C18.6881 17.8838 18.9903 17.5708 19.3789 17.4219C19.5525 17.3554 19.7597 17.3335 20.1741 17.2896C20.9081 17.212 21.2751 17.1732 21.4786 17.0486C21.9423 16.7648 22.1245 16.1662 21.9116 15.6266C21.8181 15.3898 21.5481 15.1102 21.0079 14.5509L18.5442 12"
+                              stroke="#1CC0E9"
+                              stroke-width="1.5"
+                            ></path>
+                            <path
+                              d="M5.5 6.39691C5.17745 7.20159 5 8.08007 5 9C5 12.866 8.13401 16 12 16C15.866 16 19 12.866 19 9C19 5.13401 15.866 2 12 2C11.0801 2 10.2016 2.17745 9.39691 2.5"
+                              stroke="#1CC0E9"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sm:ml-4 flex flex-col -space-y-2">
+                        <h5 class="mb-3 text-xl font-semibold tracking-tight">
+                          Kualitas Printing Unggul
+                        </h5>
+                        <p class="text-neutral-500 dark:text-neutral-300">
+                          Memberikan jaminan kualitas cetakan yang tinggi,
+                          dengan menggunakan peralatan modern dan bahan
+                          berkualitas untuk hasil akhir yang memuaskan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-white p-4 sm:p-5 border border-primary/40 rounded w-full lg:px-3"
+                  >
+                    <div class="flex flex-col sm:flex-row">
+                      <div class="shrink-0">
+                        <div
+                          class="mb-6 inline-block rounded-md bg-slate-200 p-4 text-primary"
+                        >
+                          <svg
+                            version="1.1"
+                            id="DESIGN"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            class="h-9 sm:w-6 w-9 sm:h-6"
+                            viewBox="0 0 1800 1800"
+                            enable-background="new 0 0 1800 1800"
+                            xml:space="preserve"
+                          >
+                            <g id="Layer">
+                              <g>
+                                <path
+                                  fill="#1CC0E9"
+                                  d="M1541.606,1540.146l0.009-0.008c35.598-35.594,35.598-93.52,0-129.121
+                            c-17.24-17.236-40.178-26.745-64.569-26.745c-24.378,0-47.314,9.509-64.564,26.763c-35.588,35.584-35.588,93.51,0.009,129.104
+                            C1448.096,1575.73,1506.014,1575.73,1541.606,1540.146z M1440.885,1511.743c-9.656-9.655-14.975-22.498-14.975-36.165
+                            c0-13.659,5.318-26.511,14.975-36.167c9.665-9.655,22.512-14.979,36.175-14.979c13.659,0,26.497,5.323,36.161,14.979
+                            c19.938,19.945,19.938,52.387-0.008,72.332C1493.271,1531.689,1460.831,1531.681,1440.885,1511.743z"
+                                ></path>
+                                <path
+                                  fill="#1CC0E9"
+                                  d="M1700.934,402.736c0.021-0.026,0.047-0.043,0.068-0.065c0.044-0.043,0.083-0.091,0.127-0.134l5.504-5.505
+                            l-0.138-0.139c81.836-87.814,80.038-225.814-5.507-311.356c-42.353-42.357-98.664-65.685-158.565-65.685
+                            c-57.228,0-111.154,21.339-152.792,60.18l-0.134-0.134l-5.511,5.507c-0.043,0.046-0.09,0.085-0.134,0.131
+                            c-0.021,0.021-0.039,0.045-0.061,0.069L66.371,1403.02l0.513,0.513c-7.364,4.749-12.699,12.548-13.98,21.907L9.578,1741.903
+                            c-1.319,9.647,1.95,19.347,8.831,26.232c5.875,5.87,13.807,9.108,22.004,9.108c1.402,0,2.813-0.095,4.224-0.286l316.451-43.338
+                            c9.365-1.276,17.163-6.617,21.912-13.98l0.512,0.513L1700.934,402.736z M1542.423,82.094c43.272,0,83.954,16.852,114.551,47.452
+                            c55.643,55.638,62.276,142.02,19.897,204.983L1451.973,109.64C1478.482,91.724,1509.717,82.094,1542.423,82.094z
+                            M1389.497,167.919l229.113,229.112L383.512,1632.129l-86.195-86.19l991.423-991.409l-59.351-59.342l-991.41,991.418
+                            l-83.585-83.586L1389.497,167.919z M76.804,1709.731l35.68-260.604l224.915,224.916L76.804,1709.731z"
+                                ></path>
+                                <path
+                                  fill="#1CC0E9"
+                                  d="M506.941,804.479l56.789-56.789l-454.446-454.45l185.432-185.437l87.924,87.932l-63.792,63.783
+                            l50.362,50.359l63.792-63.779l51.262,51.258l-63.792,63.788l50.363,50.354l63.797-63.779l51.257,51.267l-94.375,94.353
+                            l50.376,50.363l94.362-94.362l62.502,62.498l-63.792,63.801l50.363,50.354l63.792-63.792l0.043,0.047l56.789-56.789
+                            L323.106,22.622c-15.682-15.686-41.102-15.686-56.784,0L24.102,264.845c-15.687,15.683-15.687,41.107,0,56.789L506.941,804.479z"
+                                ></path>
+                                <path
+                                  fill="#1CC0E9"
+                                  d="M1778.944,1478.287c-0.726-0.729-1.478-1.424-2.241-2.085l-505.282-505.273l-151.159,151.159l50.259,50.26
+                            l94.371-94.37l428.79,428.782l-185.441,185.432l-479.045-479.041l-56.789,56.798l507.437,507.427
+                            c15.682,15.69,41.102,15.69,56.788,0l242.234-242.213c0.021-0.034,0.048-0.052,0.079-0.086
+                            C1794.63,1519.402,1794.63,1493.969,1778.944,1478.287z"
+                                ></path>
+                              </g>
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="sm:ml-4 flex flex-col -space-y-2">
+                        <h5 class="mb-3 text-xl font-semibold tracking-tight">
+                          Desain Kreatif
+                        </h5>
+                        <p class="text-neutral-500 dark:text-neutral-300">
+                          Menyediakan layanan desain yang kreatif dan
+                          profesional bagi pelanggan yang membutuhkan bantuan
+                          dalam merancang produk mereka.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="bg-gradient-to-br from-sky-50">
+        <section class="container py-36 mx-auto md:px-6">
+          <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 text-gray-800">
+            <p
+              class="mb-3 font-semibold tracking-tighter uppercase text-primary dark:text-primary-400 sm:text-lg"
+            >
+              Testimoni
+            </p>
+            <h2 class="mb-5 text-4xl font-bold">
+              Kata mereka
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r capitalize to-blue-500 from-primary"
+                >tentang kami</span
+              >
+            </h2>
+            <p
+              class="mb-12 text-neutral-500 dark:text-neutral-300 text-lg font-normal"
+            >
+              Ulasan dan kesan mereka adalah bukti nyata dari komitmen kami
+              untuk memberikan pelayanan baik.
+            </p>
+            <div class="mt-24">
+              <div class="-mx-3 md:flex items-start">
+                <div class="px-3 md:w-1/3">
+                  <div
+                    class="w-full mx-auto rounded-lg hover:shadow-md duration-100 bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+                  >
+                    <div class="w-full">
+                      <svg
+                        class="w-6 h-6 mb-2 mx-auto text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path
+                          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                        ></path>
+                      </svg>
+                      <p class="text-base leading-tight">
+                        <span
+                          class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                          >"</span
+                        >Saya sangat terkesan dengan pelayanan Offer Print.
+                        Harga mereka sangat terjangkau dan kualitas printing-nya
+                        tidak pernah mengecewakan. Mereka adalah pilihan utama
+                        saya untuk semua kebutuhan cetak.<span
+                          class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                          >"</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full mx-auto rounded-lg hover:shadow-md duration-100 bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+                  >
+                    <div class="w-full">
+                      <svg
+                        class="w-6 h-6 mb-2 mx-auto text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path
+                          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                        ></path>
+                      </svg>
+                      <p class="text-base leading-tight">
+                        <span
+                          class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                          >"</span
+                        >Saya perlu pesanan dalam waktu singkat dan mereka tidak
+                        hanya memberikan percetakan yang cepat, tetapi hasilnya
+                        sangat berkualitas. Terima kasih telah menyelamatkan
+                        proyek saya!<span
+                          class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                          >"</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 md:w-1/3">
+                  <div
+                    class="w-full mx-auto rounded-lg hover:shadow-md duration-100 bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+                  >
+                    <div class="w-full">
+                      <svg
+                        class="w-6 h-6 mb-2 mx-auto text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path
+                          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                        ></path>
+                      </svg>
+                      <p class="text-base leading-tight">
+                        <span
+                          class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                          >"</span
+                        >Desain mereka benar-benar menghidupkan visi saya.
+                        Mereka tidak hanya menciptakan desain yang menakjubkan,
+                        tetapi juga mengambil inisiatif dalam memberikan
+                        saran-saran yang brilian.<span
+                          class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                          >"</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full mx-auto rounded-lg hover:shadow-md duration-100 bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+                  >
+                    <div class="w-full">
+                      <svg
+                        class="w-6 h-6 mb-2 mx-auto text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path
+                          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                        ></path>
+                      </svg>
+                      <p class="text-base leading-tight">
+                        <span
+                          class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                          >"</span
+                        >Mereka selalu bersedia membantu dan menjawab setiap
+                        pertanyaan dengan ramah. Rasanya seperti berbicara
+                        dengan teman sendiri. Terima kasih telah membuat
+                        pengalaman cetak saya begitu menyenangkan.<span
+                          class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                          >"</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 md:w-1/3">
+                  <div
+                    class="w-full mx-auto rounded-lg hover:shadow-md duration-100 bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+                  >
+                    <div class="w-full">
+                      <svg
+                        class="w-6 h-6 mb-2 mx-auto text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path
+                          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                        ></path>
+                      </svg>
+                      <p class="text-base leading-tight">
+                        <span
+                          class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                          >"</span
+                        >Print selama bertahun-tahun, dan itu karena kepercayaan
+                        yang terjaga. Mereka selalu menghormati tenggat waktu
+                        dan memberikan hasil yang melebihi harapan saya.<span
+                          class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                          >"</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full mx-auto rounded-lg hover:shadow-md duration-100 bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6"
+                  >
+                    <div class="w-full">
+                      <svg
+                        class="w-6 h-6 mb-2 mx-auto text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 18 14"
+                      >
+                        <path
+                          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+                        ></path>
+                      </svg>
+                      <p class="text-base leading-tight">
+                        <span
+                          class="text-lg leading-none italic font-bold text-gray-400 mr-1"
+                          >"</span
+                        >Dari desain hingga percetakan, semuanya dikerjakan
+                        dengan presisi dan perhatian detail yang luar biasa.
+                        Mereka adalah mitra yang bisa diandalkan.<span
+                          class="text-lg leading-none italic font-bold text-gray-400 ml-1"
+                          >"</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="bg-gray-800 text-gray-100">
+        <div class="container px-6 py-12 mx-auto">
+          <div class="grid items-center gap-4 xl:grid-cols-5">
+            <div
+              class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left"
+            >
+              <h2 class="text-4xl font-bold">Duo assum utroque appetere an</h2>
+              <p class="text-gray-400">
+                Pri ex magna scaevola moderatius. Nullam accommodare no vix, est
+                ei diceret alienum, et sit cetero malorum. Et sea iudico
+                consequat, est sanctus adipisci ex.
+              </p>
+            </div>
+            <div class="p-6 xl:col-span-3">
+              <div class="grid gap-4 md:grid-cols-2">
+                <div class="grid content-center gap-4">
+                  <div class="p-6 rounded shadow-md bg-gray-900">
+                    <p>
+                      An audire commodo habemus cum. Ne sed corrumpit
+                      repudiandae. Tota aliquip democritum pro in, nec
+                      democritum intellegam ne. Propriae volutpat dissentiet ea
+                      sit, nec at lorem inani tritani, an ius populo perfecto
+                      vituperatoribus. Eu cum case modus salutandi, ut eum
+                      vocent sensibus reprehendunt.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://source.unsplash.com/50x50/?portrait?1"
+                        alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
+                      />
+                      <div>
+                        <p class="text-lg font-semibold">Leroy Jenkins</p>
+                        <p class="text-sm text-gray-400">CTO of Company Co.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-6 rounded shadow-md bg-gray-900">
+                    <p>
+                      Sit wisi sapientem ut, pri civibus temporibus voluptatibus
+                      et, ius cu hinc fabulas. Nam meliore minimum et, regione
+                      convenire cum id. Ex pro eros mucius consectetuer, pro
+                      magna nulla nonumy ne, eam putent iudicabit consulatu cu.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://source.unsplash.com/50x50/?portrait?2"
+                        alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
+                      />
+                      <div>
+                        <p class="text-lg font-semibold">Leroy Jenkins</p>
+                        <p class="text-sm text-gray-400">CTO of Company Co.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid content-center gap-4">
+                  <div class="p-6 rounded shadow-md bg-gray-900">
+                    <p>
+                      Putant omnium elaboraret per ut. Id dicta tritani nominavi
+                      quo, mea id justo errem elaboraret. Agam mollis scripserit
+                      ea his, ut nec postea verear persecuti. Ea noster senserit
+                      eam, ferri omittantur ei nec. Id mel solet libris
+                      efficiantur, commune explicari et eos. Case movet ad est,
+                      sed tota vocent appetere ea.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://source.unsplash.com/50x50/?portrait?3"
+                        alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
+                      />
+                      <div>
+                        <p class="text-lg font-semibold">Leroy Jenkins</p>
+                        <p class="text-sm text-gray-400">CTO of Company Co.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-6 rounded shadow-md bg-gray-900">
+                    <p>
+                      Te omnes virtute volutpat sed. Ei esse eros interesset
+                      vel, ei populo denique ocurreret vix, eu cum pertinax
+                      mandamus vituperatoribus. Solum nihil luptatum per ex, ei
+                      amet viderer eos. Ea illum labitur mnesarchum pro. Eius
+                      meis salutandi ei nam, alterum expetenda et nec. Expetenda
+                      intellegat at eum, per mazim sanctus honestatis ad. Ei
+                      noluisse invenire vix. Te ancillae patrioque qui, probo
+                      bonorum vivendum ex vim.
+                    </p>
+                    <div class="flex items-center mt-4 space-x-4">
+                      <img
+                        src="https://source.unsplash.com/50x50/?portrait?4"
+                        alt=""
+                        class="w-12 h-12 bg-center bg-cover rounded-full bg-gray-500"
+                      />
+                      <div>
+                        <p class="text-lg font-semibold">Leroy Jenkins</p>
+                        <p class="text-sm text-gray-400">CTO of Company Co.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gradient-to-br from-cyan-50">
+        <div class="container py-36 mx-auto md:px-6">
+          <div
+            class="mb-6 mx-auto w-full sm:text-center px-4 sm:px-2 lg:mb-0 lg:w-3/6"
+          >
+            <p
+              class="mb-3 font-semibold tracking-tighter uppercase text-primary dark:text-primary-400 sm:text-lg"
+            >
+              Produk
+            </p>
+            <h2 class="mb-5 text-4xl font-bold">
+              Semua produk
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r to-blue-500 from-primary capitalize"
+              >
+                Offer Print</span
+              >
+            </h2>
+            <p
+              class="mb-12 text-neutral-500 dark:text-neutral-300 text-lg font-normal"
+            >
+              Kami menghadirkan solusi cetak yang memikat dan memenuhi harapan,
+              dengan kemudahan pesan online kapan saja
+            </p>
+          </div>
+
+          <div class="mt-16 gap-y-10 xl:gap-x-8">
+            <div class="carouselgambar flex my-16" id="carousel1">
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/1.jpg"
+                    alt="Product 1"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Brosure"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/2.jpg"
+                    alt="Product 2"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Compro"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/3.jpg"
+                    alt="Product 3"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Cutting Oracal"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/4.jpg"
+                    alt="Product 4"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Cutting Stiker"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/5.jpg"
+                    alt="Product 5"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="kalender"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/6.jpg"
+                    alt="Product 6"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Kop Surat"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/7.jpg"
+                    alt="Product 7"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Kartu Nama"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carouselgambar flex my-16" id="carousel2">
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/8.jpg"
+                    alt="Product 8"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Lanvard ID Card"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/9.jpg"
+                    alt="Product 9"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Mug"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/10.jpg"
+                    alt="Product 10"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Nota"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/11.jpg"
+                    alt="Product 11"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Plakat Akrilik"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/12.jpg"
+                    alt="Product 12"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Poster"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/13.jpg"
+                    alt="Product 13"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Print Bahan Canvas"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/14.jpg"
+                    alt="Product 14"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Roll Up Banner"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carouselgambar flex my-16" id="carousel3">
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/15.jpg"
+                    alt="Product 15"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Sablon Baju"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/16.jpg"
+                    alt="Product 16"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Spanduk Banner"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/17.jpg"
+                    alt="Product 17"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Spanduk"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/18.jpg"
+                    alt="Product 18"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Stempel"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/19.jpg"
+                    alt="Product 19"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Stiker Meteran"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/20.jpg"
+                    alt="Product 20"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Tripod Polyfoam"
+                  />
+                </div>
+              </div>
+              <div class="mr-3 group h-auto max-w-full rounded-lg">
+                <div
+                  class="w-full bg-transparent group-hover:opacity-90 hover:rotate-0 rotate-1 cursor-pointer duration-300 rounded-lg lg:h-80"
+                >
+                  <img
+                    src="../public/img/products/21.jpg"
+                    alt="Product 21"
+                    class="shadow h-full w-full object-cover object-center img hover:shadow-lg hover:shadow-accent/40 rounded-lg"
+                    loading="lazy"
+                    name="Banner"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center"
+      >
+        <span class="text-sm sm:text-center text-black">
+          Copyright ©
+          <!--?= date('Y'); ?-->
+          -
+          <a
+            class="hover:underline decoration-blue-400 dark:decoration-blue-600 underline-offset-3 decoration-2 hover:text-gray-900 duration-300"
+            href="085780741761"
+            >Offer Print</a
+          >
+        </span>
+      </div>
+    </footer>
+
+    <!-- Whatsapp Absolute -->
+    <div class="w-14 fixed bottom-5 hover:scale-105 duration-75 right-5">
+      <a href="#">
+        <svg
+          class="rounded-full"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="WhatsApp"
+          role="img"
+          viewBox="0 0 512 512"
+        >
+          <rect width="512" height="512" rx="15%" fill="#25d366"></rect>
+          <path
+            fill="#25d366"
+            stroke="#ffffff"
+            stroke-width="26"
+            d="M123 393l14-65a138 138 0 1150 47z"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"
+          ></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="flex fixed z-10 left-0 top-0 w-full h-full bg-slate-300 bg-opacity-50 modal-box hidden">
+      <div class="bg-slate-100 text-darksecondary my-[10%] mx-auto p-5 border h-max">
+        <img class="h-[400px]" src="" alt="">
+        <div class="flex justify-center items-center mt-6 gap-10">
+          <button type="button" class="buy before:inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm sm:ml-3 sm:w-auto">Buy</button>
+          <button type="button" class="close mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Box
+    <div class="relative z-10 modal-box" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div class="fixed inset-0 z-10 overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+              <div class="sm:flex sm:items-start">
+                <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                  <img src="img/products/1.jpg" alt="Product 1" name="kalender">
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-4 flex justify-center py-3 sm:flex sm:flex-row-reverse sm:px-6">
+              <button type="button" class="buy before:inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-accent sm:ml-3 sm:w-auto">Buy</button>
+              <button type="button" class="close mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      const img = document.querySelectorAll('.img');
+      const modal = document.querySelector('.modal-box');
+      img.forEach(element => {
+        element.addEventListener('click',() => {
+          modal.classList.remove('hidden');
+          modal.querySelector('img').setAttribute('src', element.getAttribute('src'));
+          modal.querySelector('img').setAttribute('alt', element.getAttribute('name'));
+          
+        })
+      });
+
+      document.querySelector('.close').addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.querySelector('img').setAttribute('src', '');
+        modal.querySelector('img').setAttribute('alt', '');
+      })
+
+
+
+
+
+
+
+
+      $(document).ready(function () {
+        function getRandomSpeed() {
+          return Math.floor(Math.random() * (8000 - 2000 + 1)) + 2000;
+        }
+
+        $(".carouselgambar").each(function () {
+          const autoplaySpeed = getRandomSpeed();
+
+          $(this).slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            pauseOnHover: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: "20%",
+            autoplaySpeed: autoplaySpeed,
+            speed: 200,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  autoplay: false,
+                },
+              },
+              {
+                breakpoint: 400,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  autoplay: false,
+                },
+              },
+            ],
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
